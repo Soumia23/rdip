@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script>
+function check(){
+var a = document.getElementById("number").value;
+if(a>10&&a<100)
+{
+document.write("Number lies between 10-100");
+}
+else{ document.write("Number doesnot lies between 10-100");}}
+
+</script>
+<label>Check if number lies between 10-100</label>
+<input type="number" id="number">
+<input type="submit" id="check" value="check" onclick="check()">
+</html>

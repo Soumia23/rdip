@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script>
+function fibi()
+{
+var a=0,b=1,c=0;
+var x=[];
+var n=document.getElementById("fibi").value;
+if(n<2){document.write("0,1");}
+else{
+document.write("0,1");
+for(var i=1;i<n-1;i++)
+{
+x[i]=a+b;
+a=b;
+b=x[i];
+}
+document.write(x);
+}
+}
+</script>
+<label>Create fibonacci series: <br>
+enter n value</label>
+<input type=
+number" id="fibi">
+<input type="submit" id="fibi" value="Create"  onclick="fibi()">
+</html>
