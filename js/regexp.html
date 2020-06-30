@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<title>Regular Expressions</title>
+<script>
+function check()
+{
+var name = document.getElementById("name").value;
+var check=/^[A-Za-z]/;
+if( name.match(check))
+ {alert("Valid name");}
+else { alert("Invalid name, use only alphabets");}
+}
+</script>
+<body>
+<label for="name">Name : </label>
+<input type="text" id="name">
+<button onclick="check()">Submit</button> 
+</body></html>

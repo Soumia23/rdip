@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Table</title>
+<h1>Marked obtained</h1>
+<style>
+table,th,td{
+border:1px solid black;}
+table {
+width:80%;
+border-collapse: collapse;
+}
+td,th{ 
+border: 1px solid black;
+height: 50px;
+}
+.left{ 
+text-align: left;
+}
+#right{
+text-align:right;
+}
+
+</style>
+<body >
+
+<table id="table">
+<tr>
+ <th class="left">Course</th>
+    <th id="right" colspan="50">Marks Obtained</th>
+     </tr>
+  <tr>
+    <td class="left">VLSI</td>
+    <td id="right" colspan="50">95</td>
+  </tr>
+  <tr>
+    <td class="left">Python</td>
+    <td id="right" colspan="50">90</td>
+  </tr>
+<tr>
+   <td class="left">Matlab</td>
+    <td id="right" colspan="50">85</td>
+</tr>
+<tr><td id="total"></td>
+<td id="average"></td>
+
+</table>
+<script>
+var table=document.getElementById("table"),sum = 0;
+  count=0
+for(var i = 1; i < table.rows.length -1 ; i++) {
+count = count + 1;
+sum = sum + parseInt(table.rows[i].cells[1].innerHTML);
+}
+document.getElementById("total").innerHTML = "Total : " + sum;
+document.getElementById("average").innerHTML = "Average : " + sum/count;
+</script>
+ </body>
+</html>
