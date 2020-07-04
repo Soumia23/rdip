@@ -1,0 +1,42 @@
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color:#82807d ;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px black;
+}
+.button:hover{ background-color: #cdcccb;}
+.button:active {
+  background-color: grey;
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+}
+img{
+width: 100px;
+height: 100px;
+}
+input[type="text"]{
+text-align: center;
+font-size: 25px;
+width: 200px;
+height:25px;
+background-color : #e0d7d7;
+color : black;
+margin: 10px;
+}
+p{
+font-size: 30px;
+}
+h1{
+font-size: 35px;
+}
+label{
+font-size:25px;
+}

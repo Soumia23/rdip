@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Calculator</title>
+<script src="script.js"></script>
+<link href="calculator.css" type="text/css" rel="stylesheet">
+<body>
+<div >
+<h1 >Calculator</h1>
+<input type="text" id="result" disabled>
+<table >
+<tr>
+<td><input type="button" id="1" onclick="show(1)" value="1"></td>
+<td><input type="button" id="2" onclick="show(2)" value="2"></td>
+<td><input type="button" id="3" onclick="show(3)" value="3"></td>
+<td><input type="button" id="clr" onclick="clr()" value="clr"></td>
+<td><input type="button" id="sqrt" onclick="sqrt()" value="sqrt"></td>
+</tr>
+<tr>
+<td><input type="button" id="4" onclick="show(4)" value="4"></td>
+<td><input type="button" id="5" onclick="show(5)" value="5"></td>
+<td><input type="button" id="6" onclick="show(6)" value="6"></td>
+<td><input type="button" id="+" onclick="show('+')" value=" + "></td>
+<td><input type="button" id="-" onclick="show('-')" value=" - "></td>
+</tr>
+<tr>
+<td><input type="button" id="7" onclick="show(7)" value="7"></td>
+<td><input type="button" id="8" onclick="show(8)" value="8"></td>
+<td><input type="button" id="9" onclick="show(9)" value="9"></td>
+<td><input type="button" id="*" onclick="show('*')" value=" * "></td>
+<td><input type="button" id="/" onclick="show('/')" value=" / "></td>
+</tr>
+<tr>
+<td><input type="button" id="." onclick="show('.')" value=" ."></td>
+<td><input type="button" id="0" onclick="show(0)" value="0"></td>
+<td><input type="button" id="=" onclick="equalto()" value="="></td>
+<td><input type="button" id="abs" onclick="abs()" value="abs"></td>
+<td><input type="button" id="%" onclick="per()" value="%"></td>
+</tr>
+</table></div>
+</body>
+</html>
